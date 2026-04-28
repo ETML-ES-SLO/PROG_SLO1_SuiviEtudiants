@@ -6,7 +6,7 @@
 //
 // Auteur 				: Philou (Ph. Bovey)
 //
-// Version				: 1.2
+// Version				: 1.3
 //
 // Description          : demo pour SLO1 25-26
 //						  -> type 
@@ -14,7 +14,6 @@
 //						  -> condition - itération
 //						  -> appel de fontion - utilisation lib perso + standard 
 // 
-//
 // Remarques			: une constante numérique entière -> ex 10 prend 4 octets 
 //						  une constante numérique réelle -> ex 3.14 prend 8 octets             
 //----------------------------------------------------------------------------------//
@@ -23,17 +22,18 @@
 #include <stdio.h>				// lib pour les entrée - sortie (console - lecture clavier)
 #include <stdint.h>				// lib pour le entier normalisé 
 #include <stdbool.h>			// lib pour le type bool 
+#include <string.h>				// pour la gestion des chaine de caractère
 
 //-- librairie perso --//  
 #include "Conversion.h"
 #include "interfaceUser.h"
+#include "definitions.h"
 
 
 //-- définition --// 
 #define FOIX_2 2
 #define ANNEES "25-26"
 #define VERSION 1.1
-#define TAILLE_TB 10
 #define LIGNE 3
 #define COLONNE 5
 
@@ -74,8 +74,8 @@ void main()
 	char varI;								// 1 octet
 
 	//-- tabeau entier de 1o
-	char tbExemple[TAILLE_TB];				// 10 octet
-	char tbExemple2[TAILLE_TB] = { 0 };		// 10 octet
+	char tbExemple[TAILLE_TB];					// 10 octet
+	char tbExemple2[TAILLE_TB_Q9] = { 0 };		// 50 octet
 
 	//-- pointeur entier -> 1 octet
 	char* ptTb; 
@@ -87,8 +87,12 @@ void main()
 										    {0, 0, 0, 0, 0},	// ELCO
 									        {0, 0, 0, 0, 0} };	// ELNU 
 
+	//-- déclaration pour la question Q11B 
+	short tbQ11B[5][2][3];
+	int result = sizeof(tbQ11B); 
+
 	int varK, i, j;			// 4 octets			int = long 
-	long long varL;	// 8 octets 
+	long long varL;			// 8 octets 
 
 	//--- Non signé (+) 
 	unsigned char varM;		// 1 octet
@@ -118,6 +122,8 @@ void main()
 
 	//--> message user -> info taille 
 	printf("\n-> taille d'un booleen %d [o]", sizeof(bool));
+	printf("\n-> taille du tableau multidimension Q11B : %d [o]", sizeof(result));
+
 
 	//--définition d'un type enumération -> e_machineEtat -> locale --// 
 					  //ETAT1 = 0, ETAT2 = 20, ETAT3 = 21
@@ -128,15 +134,12 @@ void main()
 	e_FORME formeGeo = RECTANGLE;
 
 	//-- déclaration structure --// 
-
-
 	//-- local //-- type //-- variable 
 	struct str_GestLED mesLeds; 
 
 
 	// -- type		//-- variable 
 	str_transistor monTransistor = { 100, 0.7, {0}};
-
 	str_enteteEthernet ethernet; 
 	
 	varK = sizeof(str_enteteEthernet); 
@@ -157,7 +160,20 @@ void main()
 	varI = ethernet2.decodageTrame.longueurEntete; 
 	varF = ethernet2.decodageTrame.longeurTotal; 
 
+	//-- code pour la question Q9 --//
+	//-- remplissage du tableau de 1 à 10
+	for (i = 0; i < TAILLE_TB; i++)
+		tbExemple[i] = i + 1; 
 
+	//-- copier tbExemple dans tbExemple2
+	strcpy(tbExemple2, tbExemple); 
+
+
+
+
+
+	//-- lecture écriture --// 
+	gestionFichier(); 
 
 
 	//-- passage par référence --//

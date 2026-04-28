@@ -61,6 +61,9 @@ void DemoAffichage();
 void DemoStruct(str_transistor *tansistor); 
 
 
+void gestionFichier(); 
+
+
 
 #endif // !INTERFACE_USER_H
 
