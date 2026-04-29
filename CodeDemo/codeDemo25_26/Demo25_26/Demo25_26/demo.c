@@ -37,7 +37,6 @@
 #define LIGNE 3
 #define COLONNE 5
 
-
 //-- définition structure local par rapport au fichier --// 
 struct str_GestLED
 {
@@ -74,11 +73,7 @@ void main()
 	char varI;								// 1 octet
 
 	//-- tabeau entier de 1o
-	char tbExemple[TAILLE_TB];					// 10 octet
-	char tbExemple2[TAILLE_TB_Q9] = { 0 };		// 50 octet
-
-	//-- pointeur entier -> 1 octet
-	char* ptTb; 
+	char tbExemple[TAILLE_TB];				// 10 octet
 
 	short varJ;								// 2 octets 
 
@@ -159,17 +154,6 @@ void main()
 	varI = ethernet2.decodageTrame.version; 
 	varI = ethernet2.decodageTrame.longueurEntete; 
 	varF = ethernet2.decodageTrame.longeurTotal; 
-
-	//-- code pour la question Q9 --//
-	//-- remplissage du tableau de 1 à 10
-	for (i = 0; i < TAILLE_TB; i++)
-		tbExemple[i] = i + 1; 
-
-	//-- copier tbExemple dans tbExemple2
-	strcpy(tbExemple2, tbExemple); 
-
-
-
 
 
 	//-- lecture écriture --// 
