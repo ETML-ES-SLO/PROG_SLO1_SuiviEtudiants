@@ -36,23 +36,20 @@
 //-- déclaration de structure --// 
 struct st_tbCode
 {
-	int8_t tbNRZ[8];
-	int8_t tnNRZi[8];
+	
 };
 
 struct str_tbInfoRIUP
 {
-	uint16_t tbR[TAILLE_TB_RIUP];		//	tableau de 5 résitances 
-	float	 tbI[TAILLE_TB_RIUP];		//	tableau 5 courant 
-	int8_t	 tbU[TAILLE_TB_RIUP];		//	tableau 5 tension 
-	float	 tbP[TAILLE_TB_RIUP];		//  tableau 5 Puissance 
+			//	tableau de 5 résitances 
+			//	tableau 5 courant 
+		//	tableau 5 tension 
+			//  tableau 5 Puissance 
 };
 
 struct str_trioTR
 {
-	int8_t	adj, opp, hyp; 
-	float	alpha_radian; 
-	int16_t aplha_degre; 
+	 
 };
 
 

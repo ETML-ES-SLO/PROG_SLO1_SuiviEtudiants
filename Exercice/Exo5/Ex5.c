@@ -26,31 +26,29 @@ int main(void)
 {
 	// Déclarations locales des variables
 	// ----------------------------------
-	int valA = 0;			//gat value entrée par user
-	char int8Val  = 125;
-	unsigned char uint8Val = 125;
+				//gat value entrée par user
+	
+	
 
 	// Affectations
 	// ------------
-	if (valA>9)
+	if ()
 	{
 		printf ("ValA limitee à 9");
 	}
 	else 
 	{
-		if (valA > 0)
+		if ()
 		{
-			for (char i = 0; i < valA; i++)
+			for ()
 			{
-				printf ("i = %d", i);
+				printf ();
 			}
 		}
 	}
-	for (char i = 0; i < 10; i++)
+	for ()
 	{
-		printf ("int8Val = %+3d uint8Val = %+3d", int8Val, uint8Val);
-		int8Val++;
-		uint8Val++;
+		
 	}
 
 	

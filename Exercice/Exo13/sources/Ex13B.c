@@ -6,15 +6,11 @@
 
 // type structure fourni
 typedef struct {
-	float NoteTe1;
-	float NoteTe2;
-	float NoteTe3;
+
 } S_TroisNotes ;
 
 typedef struct {
-	S_TroisNotes EleveA;
-	S_TroisNotes EleveB;
-	S_TroisNotes EleveC;
+
 } S_AllNotes ;
 
 // definition du type S_AllMoyennes
@@ -35,9 +31,9 @@ int main (void)
 	char UserAnswer;
 	// Variables pour test A
 	S_AllNotes ValA = {
-		{5.5, 5.0, 5.0},
-		{4.0, 4.5, 5.0},
-		{3.5, 4.0, 4.0} };
+		{},
+		{},
+		{} };
 	
 
 	// Variables pour test B

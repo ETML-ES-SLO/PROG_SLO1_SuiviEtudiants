@@ -31,11 +31,11 @@ int main(void)
 
     
 	// Affichages pour controle
-	printf ("Tension = %d \n", );
- 	printf ("BigVal = %lx \n", );
-	printf ("Lettre  = %c \n", );
-	printf ("Figure = %d \n", );
-	printf ("Rayon = %8.3f Surface = %8.3f \n", );
+	printf ("Tension = \n", );
+ 	printf ("BigVal =  \n", );
+	printf ("Lettre  =  \n", );
+	printf ("Figure =  \n", );
+	printf ("Rayon =  Surface =  \n", );
 
   return(0);
 }

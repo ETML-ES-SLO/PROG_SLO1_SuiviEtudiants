@@ -1,5 +1,0 @@
-﻿  fonction.c
-  main.c
-C:\PBY\PROJET\PROGRAMMATION\GITHUB\PROG_DEMO_SLO24_25\CodeDemo\DemoAffichageEtoile\DemoAffichageEtoile\main.c(22,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Génération de code en cours...
-  DemoAffichageEtoile.vcxproj -> C:\PBY\PROJET\PROGRAMMATION\GITHUB\PROG_DEMO_SLO24_25\CodeDemo\DemoAffichageEtoile\Debug\DemoAffichageEtoile.exe
