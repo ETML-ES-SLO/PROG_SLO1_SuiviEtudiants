@@ -61,7 +61,7 @@
 ---
 
 | Exercice \ Initial Etudiant | **[YAD](https://github.com/TheBigYA)** | **[SAR](https://github.com/Simaugs)** | **[VBC](https://github.com/Valentin-Blanc)** | **[TBT](https://github.com/Thobrechet)** | **[MCN](https://github.com/Maraph)** | **[TCK](https://github.com/Tyuz3)** | **[NDC](https://github.com/ItzNicolo)** | **[GFE](https://github.com/Giome)** |**[GFR](https://github.com/Kinao27)** |**[GMO](https://github.com/Ninja404-coder)** | **[NRN](https://github.com/NonoAndDuck)** | **[BSC](https://github.com/Benji1920)** | **[NAM](https://github.com/Noe-Alam)** | **[NTN](https://github.com/NicoTf40)** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:| 
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|  
 | [Ex1](https://github.com/PBYetml/PROG_SLO1_25_26/tree/main/Exercice/Exo1)  | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | 
 | [Ex2A](https://github.com/PBYetml/PROG_SLO1_25_26/tree/main/Exercice/Exo2) | NOK | NOK| NOK| NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK |  NOK |
 | [Ex3](https://github.com/PBYetml/PROG_SLO1_25_26/tree/main/Exercice/Exo3) | NOK | NOK| NOK| NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK | NOK |  NOK |
